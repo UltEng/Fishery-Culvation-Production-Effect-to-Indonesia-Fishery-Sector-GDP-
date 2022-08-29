@@ -328,6 +328,34 @@ with row12_1:
     fig10 = px.scatter(corr1, x="Nilai Produksi", y="PDB")
     st.plotly_chart(fig10, use_container_width=True) 
 
+    correlation = {
+        "Koefisien Korelasi Positif":["x = 0", "0 < x < 0,2", "0,2 <= x < 0,4", "0,4 <= x < 0,6", "0,6 <= x < 0,8", "0,8 <= x < 1", "x = 1"],
+        "Koefisien Korelasi Negatif":["x = 0", "-0.2 < x < 0", "-0,4 < x <= -0,2", "-0,6 < x <= -0,4", "-0,8 < x <= -0,6", "-1 < x <= -0,8", "x = -1"],
+        "category":["tidak ada hubungan sama sekali","Hubungan sangat lemah","Hubungan lemah","Hubungan cukup kuat","Hubungan kuat","Hubungan sangat kuat", "Hubungan sempurna"]
+    }
+    correlation_tb = pd.DataFrame(correlation)
+    st.table(data=correlation_tb.reset_index(drop=True))
+    
     st.markdown("Pearsons correlation: 0.951")
     st.markdown("Hubungan sangat kuat")
+    
+ row13_spacer1, row13_1, row13_spacer2 = st.columns((.2, 7.1, .2))
+    st.subheader('Kesimpulan')
+    st.markdown('''
+                * Nilai Produksi Budidaya memiliki hubungan sangat kuat terhadap PDB Sektor 
+                  Perikanan 
+                * Nilai produksi budidaya memiliki korelasi kuat dengan angka konsumsi ikan,
+                  volume produksi, nilai USD ekspor, volume ekspor
+                  ''')
+    st.markdown('')
+    st.subheader('Saran')
+    st.markdown('''
+                * Dapat dipertimbangkan untuk meningkatkan nilai produksi budidaya dengan 
+                  melakukan peningkatan angka konsumsi ikan, volume produksi, dan nilai ekspor
+                  agar PDB sektor perikanan bisa meningkat
+                * Perlunya pengoptimalan pemanfaatan lahan budidaya di mana di mayoritas provinsi
+                  tidak mengalami kenaikan dan juga peningkataan kualitas produksi budidaya perikanan
+                  karena walaupun jumlah produksi jauh lebih banyak nilai produksi masih disaingin
+                  oleh ikan tangkap laut  
+                  ''')
 
