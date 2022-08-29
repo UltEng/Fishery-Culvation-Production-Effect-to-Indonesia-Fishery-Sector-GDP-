@@ -52,9 +52,16 @@ with row1_1:
     st.markdown("""
     Sehingga ingin diketahui lebih jauh bagaimana pengaruh volume produksi perikanan budidaya
     , luas lahan budidaya, jumlah rumah tangga perikanan, jumlah angka konsumsi ikan, volume
-    ekspor, volume impor, nilai USD Impor, dan nilai USD Ekspor tehadap nilai produksi perikanan 
+    ekspor, volume impor, nilai USD Impor, dan nilai USD Ekspor tehadap nilai produksi perikanan budidaya
     bagaimana pengaruh nilai produksi perikanan budidaya terhadap Produk Domestik Bruto sektor 
     Perikanan
+    """)
+    
+    st.markdown("""
+    Asumsi Awal
+    * Terdapat korelasi baik kuat maupun lemah volume produksi perikanan budidaya, luas lahan budidaya, jumlah rumah tangga perikanan, jumlah angka konsumsi ikan, volume
+    ekspor, volume impor, nilai USD Impor, dan nilai USD Ekspor tehadap nilai produksi perikanan
+    * Terdapat hubungan erat antara nilai produksi perikanan budidaya dengan produk domestik bruto sektor perikanan
     """)
 
 import os
@@ -63,18 +70,18 @@ if os.path.dirname(os.getcwd()) == "/app":
 else:
     d=".."
 
-prod = pd.read_csv(r"C:\Users\ACER\OneDrive\Documents\Berkas Pribadi\Tetris Batch 2 DQLab\Capstone Project\Streamlit\data\prod.csv")
-luas = pd.read_csv(r"C:\Users\ACER\OneDrive\Documents\Berkas Pribadi\Tetris Batch 2 DQLab\Capstone Project\Streamlit\data\luas_lahan.csv")
-rtp = pd.read_csv(r"C:\Users\ACER\OneDrive\Documents\Berkas Pribadi\Tetris Batch 2 DQLab\Capstone Project\Streamlit\data\rtp.csv")
-pdb = pd.read_csv(r"C:\Users\ACER\OneDrive\Documents\Berkas Pribadi\Tetris Batch 2 DQLab\Capstone Project\Streamlit\data\pdb.csv")
-aki = pd.read_csv(r"C:\Users\ACER\OneDrive\Documents\Berkas Pribadi\Tetris Batch 2 DQLab\Capstone Project\Streamlit\data\aki.csv")
-imp = pd.read_csv(r"C:\Users\ACER\OneDrive\Documents\Berkas Pribadi\Tetris Batch 2 DQLab\Capstone Project\Streamlit\data\imp.csv")
-eks = pd.read_csv(r"C:\Users\ACER\OneDrive\Documents\Berkas Pribadi\Tetris Batch 2 DQLab\Capstone Project\Streamlit\data\eks.csv")
+prod = pd.read_csv(r"/Streamlit/data/prod.csv")
+luas = pd.read_csv(r"/Streamlit/data/luas_lahan.csv")
+rtp = pd.read_csv(r"/Streamlit/data/rtp.csv")
+pdb = pd.read_csv(r"/Streamlit/data/pdb.csv")
+aki = pd.read_csv(r"/Streamlit/data/aki.csv")
+imp = pd.read_csv(r"/Streamlit/data/imp.csv")
+eks = pd.read_csv(r"/Streamlit/data/eks.csv")
 
 row2_spacer1, row2_1, row2_spacer2 = st.columns((.2, 7.1, .2))
 with row2_1:
 
-    st.markdown("Dapat dilihat data yang digunakan di bawah ini")
+    st.markdown("Dapat dilihat data yang digunakan di bawah ini (diperoleh dari https://statistik.kkp.go.id/home.php)")
 
     see_data = st.expander('Produksi Perikanan di Indonesia')
     with see_data:
