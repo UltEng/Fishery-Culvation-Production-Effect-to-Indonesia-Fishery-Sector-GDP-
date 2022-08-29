@@ -178,7 +178,7 @@ luas_group = luas_group.reset_index(level=['tahun', 'provinsi'])
 row6_spacer1, row6_1, row6_spacer2 = st.columns((.2, 7.1, .2))
 with row6_1:
 
-    st.subheader('Luas Tahan Budidaya Tiap Provinsi di Indonesia')
+    st.subheader('Luas Lahan Budidaya Tiap Provinsi di Indonesia')
     st.markdown("Bagaimana pemanfaatan lahan budidaya provinsi di Indonesia?")
 
     fig3= px.line(luas_group, y = 'luas lahan', 
