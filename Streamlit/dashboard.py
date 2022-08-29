@@ -64,19 +64,14 @@ with row1_1:
     * Terdapat hubungan erat antara nilai produksi perikanan budidaya dengan produk domestik bruto sektor perikanan
     """)
 
-import os
-if os.path.dirname(os.getcwd()) == "/app":
-    d = "/app/Fishery-Culvation-Production-Effect-to-Indonesia-Fishery-Sector-GDP-"
-else:
-    d=".."
 
-prod = pd.read_csv(d+"/Streamlit/data/prod.csv")
-luas = pd.read_csv(d+"/Streamlit/data/luas_lahan.csv")
-rtp = pd.read_csv(d+"/Streamlit/data/rtp.csv")
-pdb = pd.read_csv(d+"/Streamlit/data/pdb.csv")
-aki = pd.read_csv(d+"/Streamlit/data/aki.csv")
-imp = pd.read_csv(d+"/Streamlit/data/imp.csv")
-eks = pd.read_csv(d+"/Streamlit/data/eks.csv")
+prod = pd.read_csv("https://raw.githubusercontent.com/UltEng/Fishery-Culvation-Production-Effect-to-Indonesia-Fishery-Sector-GDP-/main/Streamlit/data/prod.csv")
+luas = pd.read_csv("https://raw.githubusercontent.com/UltEng/Fishery-Culvation-Production-Effect-to-Indonesia-Fishery-Sector-GDP-/main/Streamlit/data/luas_lahan.csv")
+rtp = pd.read_csv("https://raw.githubusercontent.com/UltEng/Fishery-Culvation-Production-Effect-to-Indonesia-Fishery-Sector-GDP-/main/Streamlit/data/rtp.csv")
+pdb = pd.read_csv("https://raw.githubusercontent.com/UltEng/Fishery-Culvation-Production-Effect-to-Indonesia-Fishery-Sector-GDP-/main/Streamlit/data/pdb.csv")
+aki = pd.read_csv("https://raw.githubusercontent.com/UltEng/Fishery-Culvation-Production-Effect-to-Indonesia-Fishery-Sector-GDP-/main/Streamlit/data/aki.csv")
+imp = pd.read_csv("https://raw.githubusercontent.com/UltEng/Fishery-Culvation-Production-Effect-to-Indonesia-Fishery-Sector-GDP-/main/Streamlit/data/imp.csv")
+eks = pd.read_csv("https://raw.githubusercontent.com/UltEng/Fishery-Culvation-Production-Effect-to-Indonesia-Fishery-Sector-GDP-/main/Streamlit/data/eks.csv")
 
 row2_spacer1, row2_1, row2_spacer2 = st.columns((.2, 7.1, .2))
 with row2_1:
