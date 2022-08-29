@@ -66,7 +66,7 @@ with row1_1:
 
 import os
 if os.path.dirname(os.getcwd()) == "/app":
-    d = "/app/Analisis Pengaruh Produksi Perikanan Terhadap PDB Sektor Perikanan"
+    d = "/app/Fishery-Culvation-Production-Effect-to-Indonesia-Fishery-Sector-GDP-"
 else:
     d=".."
 
