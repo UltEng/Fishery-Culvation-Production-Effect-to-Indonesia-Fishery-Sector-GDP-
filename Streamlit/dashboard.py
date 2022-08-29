@@ -339,7 +339,9 @@ with row12_1:
     st.markdown("Pearsons correlation: 0.951")
     st.markdown("Hubungan sangat kuat")
     
- row13_spacer1, row13_1, row13_spacer2 = st.columns((.2, 7.1, .2))
+row13_spacer1, row13_1, row13_spacer2 = st.columns((.2, 7.1, .2))
+with row13_1:
+    
     st.subheader('Kesimpulan')
     st.markdown('''
                 * Nilai Produksi Budidaya memiliki hubungan sangat kuat terhadap PDB Sektor 
