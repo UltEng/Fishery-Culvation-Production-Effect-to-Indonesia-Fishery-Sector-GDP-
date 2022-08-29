@@ -347,7 +347,10 @@ with row13_1:
                 * Nilai Produksi Budidaya memiliki hubungan sangat kuat terhadap PDB Sektor 
                   Perikanan 
                 * Nilai produksi budidaya memiliki korelasi kuat dengan angka konsumsi ikan,
-                  volume produksi, nilai USD ekspor, volume ekspor
+                  volume produksi, nilai USD ekspor, dan volume ekspor
+                * Nilai produksi budidaya memiliki korelasi cukup kuat dengan nilai USD impor,
+                  jumlah rumah tangga perikanan budidaya, dan luas lahan budidaya
+                * Nilai produksi budidaya memiliki korelasi lemah dengan volume impor
                   ''')
     st.markdown('')
     st.subheader('Saran')
