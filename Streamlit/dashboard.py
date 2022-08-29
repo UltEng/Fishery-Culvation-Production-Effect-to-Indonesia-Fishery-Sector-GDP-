@@ -59,8 +59,8 @@ with row1_1:
     
     st.markdown("""
     Asumsi Awal
-    * Terdapat korelasi baik kuat maupun lemah volume produksi perikanan budidaya, luas lahan budidaya, jumlah rumah tangga perikanan, jumlah angka konsumsi ikan, volume
-    ekspor, volume impor, nilai USD Impor, dan nilai USD Ekspor tehadap nilai produksi perikanan
+    * Terdapat korelasi baik kuat maupun lemah volume produksi perikanan budidaya, luas lahan budidaya, jumlah rumah tangga perikanan, jumlah angka konsumsi ikan, 
+      volume ekspor, volume impor, nilai USD Impor, dan nilai USD Ekspor tehadap nilai produksi perikanan
     * Terdapat hubungan erat antara nilai produksi perikanan budidaya dengan produk domestik bruto sektor perikanan
     """)
 
