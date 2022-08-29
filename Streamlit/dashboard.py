@@ -189,9 +189,10 @@ with row6_1:
     st.plotly_chart(fig3, use_container_width=True)
 
     st.markdown("""
-        * Sumatera memiliki luas lahan budidaya terbesar
-        * Pada tahun 2017 - 2020, Jawa Barat mengalami penurunan dan kenaikan dratis mulai dari 
-          penurunan dratis pada dari 2017 menuju 2018 lalu 2018 menuju 2019 mengalami kenaikan dratis
+        * Sulawesi Selatan memiliki luas lahan budidaya terbesar di akhir 2020
+        * Jawa timur sempat memiliki luas lahan budidaya yang besar akan tetapi mengalami penurunan dratis pada tahun 2018 menuju 2019
+        * Pada tahun 2017 - 2020, Jawa Barat mengalami penurunan dan kenaikan dratis penurunan dratis pada dari 2017 menuju 2018 lalu 
+          2018 menuju 2019 mengalami kenaikan dratis
           lalu 2019 menuju 2020 mengalami penurunan dratis lagi 
     """)
 
