@@ -70,13 +70,13 @@ if os.path.dirname(os.getcwd()) == "/app":
 else:
     d=".."
 
-prod = pd.read_csv(r"/Streamlit/data/prod.csv")
-luas = pd.read_csv(r"/Streamlit/data/luas_lahan.csv")
-rtp = pd.read_csv(r"/Streamlit/data/rtp.csv")
-pdb = pd.read_csv(r"/Streamlit/data/pdb.csv")
-aki = pd.read_csv(r"/Streamlit/data/aki.csv")
-imp = pd.read_csv(r"/Streamlit/data/imp.csv")
-eks = pd.read_csv(r"/Streamlit/data/eks.csv")
+prod = pd.read_csv(d+"/Streamlit/data/prod.csv")
+luas = pd.read_csv(d+"/Streamlit/data/luas_lahan.csv")
+rtp = pd.read_csv(d+"/Streamlit/data/rtp.csv")
+pdb = pd.read_csv(d+"/Streamlit/data/pdb.csv")
+aki = pd.read_csv(d+"/Streamlit/data/aki.csv")
+imp = pd.read_csv(d+"/Streamlit/data/imp.csv")
+eks = pd.read_csv(d+"/Streamlit/data/eks.csv")
 
 row2_spacer1, row2_1, row2_spacer2 = st.columns((.2, 7.1, .2))
 with row2_1:
