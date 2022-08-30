@@ -329,6 +329,9 @@ with row12_1:
     fig10 = px.scatter(corr1, x="Nilai Produksi", y="PDB")
     st.plotly_chart(fig10, use_container_width=True) 
 
+    st.markdown("Pearsons correlation: 0.951")
+    st.markdown("Hubungan sangat kuat")
+    
     correlation = {
         "Koefisien Korelasi Positif":["x = 0", "0 < x < 0,2", "0,2 <= x < 0,4", "0,4 <= x < 0,6", "0,6 <= x < 0,8", "0,8 <= x < 1", "x = 1"],
         "Koefisien Korelasi Negatif":["x = 0", "-0.2 < x < 0", "-0,4 < x <= -0,2", "-0,6 < x <= -0,4", "-0,8 < x <= -0,6", "-1 < x <= -0,8", "x = -1"],
@@ -337,8 +340,7 @@ with row12_1:
     correlation_tb = pd.DataFrame(correlation)
     st.table(data=correlation_tb.reset_index(drop=True))
     
-    st.markdown("Pearsons correlation: 0.951")
-    st.markdown("Hubungan sangat kuat")
+    
     
 row13_spacer1, row13_1, row13_spacer2 = st.columns((.2, 7.1, .2))
 with row13_1:
