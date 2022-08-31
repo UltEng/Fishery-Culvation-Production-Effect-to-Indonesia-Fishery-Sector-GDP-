@@ -1,6 +1,7 @@
 <h1 align="center">
 Indonesian Fishery Analysis
 <br>
+</h1>
 
 *This is the Capstone Project of the Tetris 2.0 Program*
 
