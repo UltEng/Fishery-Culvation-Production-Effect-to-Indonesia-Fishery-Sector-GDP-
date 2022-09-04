@@ -217,7 +217,7 @@ with row7_1:
         * Kalimantan Utara pada tahun awal dapat diketahui karena kalimantan utara merupakan 
           provinsi baru terbentuk akan tetapi di tahun akhir-akhir ini malah mengalami kenaikan dratis
           mendekatin Maluku Utara dan Maluku
-        * Secara keseluruhan tiap provinsi Angka Konsumsi Ikan terus meningkat dari tahun ke tahun untuk 
+        * Secara keseluruhan tiap provinsi Angka Konsumsi Ikan terus meningkat dari tahun ke tahun
     """)
 
 row8_spacer1, row8_1, row8_spacer2 = st.columns((.2, 7.1, .2))
