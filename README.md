@@ -10,3 +10,6 @@ this capstone project aim is
 total fish consumption figure, export volume, import volume, USD Import value, and USD Export value to aquaculture production value
 2. to find the effect of aquaculture production value to Indonesia Fishery Sector GDP 
 
+
+## Dashboard and Analysis
+https://ulteng-fishery-culvation-production-e-streamlitdashboard-b5i5oq.streamlitapp.com/
